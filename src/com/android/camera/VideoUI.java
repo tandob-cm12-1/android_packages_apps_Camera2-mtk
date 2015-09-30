@@ -109,6 +109,7 @@ public class VideoUI implements PreviewStatusListener {
         mAnimationManager = new AnimationManager();
         mFocusUI = (FocusOverlay) mRootView.findViewById(R.id.focus_overlay);
         mVideoHints = (VideoRecordingHints) mRootView.findViewById(R.id.video_shooting_hints);
+        mVideoHints.setVisibility(View.INVISIBLE);
     }
 
     public void setPreviewSize(int width, int height) {
@@ -259,7 +260,7 @@ public class VideoUI implements PreviewStatusListener {
      * @param show shows video recording hints when true, hides it otherwise.
      */
     public void showVideoRecordingHints(boolean show) {
-        mVideoHints.setVisibility(show ? View.VISIBLE : View.INVISIBLE);
+        //mVideoHints.setVisibility(show ? View.VISIBLE : View.INVISIBLE);
     }
 
     /**
